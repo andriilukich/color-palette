@@ -70,6 +70,7 @@
 }
 
 .ColorBox__overlay {
+  position: absolute;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -80,7 +81,6 @@
 }
 
 .ColorBox__overlay.show {
-  position: absolute;
   opacity: 1;
   transform: scale(50);
   z-index: 10;
