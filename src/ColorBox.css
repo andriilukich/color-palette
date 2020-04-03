@@ -1,0 +1,19 @@
+.ColorBox {
+  /* position: relative; */
+
+  display: inline-block;
+  width: 20%;
+  height: 25%;
+  margin: 0 auto;
+
+  cursor: pointer; 
+}
+
+.ColorBox__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.ColorBox__btn:active, .ColorBox__btn:focus {
+  outline: none;
+}
