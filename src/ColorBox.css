@@ -1,19 +1,70 @@
 .ColorBox {
-  /* position: relative; */
-
-  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
   width: 20%;
   height: 25%;
-  margin: 0 auto;
-
-  cursor: pointer; 
 }
 
 .ColorBox__btn {
-  background-color: transparent;
+  color: #fff;
+
+  cursor: pointer;
+  outline: none;
   border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: opacity 0.5s ease, background-color 0.3s ease;
 }
 
-.ColorBox__btn:active, .ColorBox__btn:focus {
-  outline: none;
+.ColorBox__btn:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ColorBox__btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.ColorBox__btn:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ColorBox__btn--copy {
+  position: absolute;
+
+  z-index: 1;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  
+  width: 100px;
+  padding: 0.4rem 1em;
+
+  font-size: 1rem;
+ 
+  opacity: 0;
+}
+
+.ColorBox:hover .ColorBox__btn--copy {
+  opacity: 1;
+}
+
+.ColorBox__features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ColorBox__name {
+  margin: 0;
+  padding: 0.3rem 0.4em;
+
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ColorBox__btn--see-more {
+  align-self: flex-end;
+  padding: 0.3rem 0.3em;
+  font-weight: bold;
 }

@@ -3,5 +3,7 @@
 }
 
 .Palette__colors {
+  display: flex;
+  flex-wrap: wrap;
   height: 90%;
 }
