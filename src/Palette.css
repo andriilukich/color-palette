@@ -7,31 +7,3 @@
   flex-wrap: wrap;
   height: 90%;
 }
-
-.Palette__slider {
-  width: 340px;
-  margin: 5px;
-}
-
-.rc-slider-track {
-  background-color: transparent;
-}
-
-.rc-slider-rail {
-  height: 8px;
-}
-
-.rc-slider-handle {
-  width: 13px;
-  height: 13px;
-  margin-top: -3px;
-  border-color: green;
-  background-color: green;
-}
-
-.rc-slider-handle:hover,
-.rc-slider-handle:active,
-.rc-slider-handle:focus {
-  border-color: green;
-  box-shadow: none;
-}
