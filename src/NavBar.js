@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'rc-slider';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -17,13 +18,13 @@ class NavBar extends Component {
   }
 
   handelFormatChange(e) {
-    this.setState({format: e.target.value, open: true}, () => 
+    this.setState({ format: e.target.value, open: true }, () =>
       this.props.changeFormat(this.state.format)
     );
   }
 
   closeSnackbar() {
-    this.setState({open: false});
+    this.setState({ open: false });
   }
 
   render() {
@@ -33,7 +34,7 @@ class NavBar extends Component {
     return (
       <header className="NavBar">
         <div className="NavBar__logo-container">
-          <a href="#" className="NavBar__logo">color*picker</a>
+          <Link className="NavBar__logo" to='/'>color*picker</Link>
         </div>
         <div className="NavBar__slider-container">
           <p className="NavBar__level">Level: {level}</p>
@@ -61,7 +62,7 @@ class NavBar extends Component {
           autoHideDuration={3000}
           onClose={this.closeSnackbar}
           message={<span id='message-id'>Format changed to {format.toUpperCase()}</span>}
-          contentProps = {{
+          contentProps={{
             'aria-describedby': 'message-id'
           }}
           action={
