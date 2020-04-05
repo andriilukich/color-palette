@@ -1,7 +1,7 @@
 import chroma from 'chroma-js';
 const levels = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
-function getPalette(starterPalette) {
+function generatePalette(starterPalette) {
   let newPalette = {
     name: starterPalette.paletteName,
     id: starterPalette.id,
@@ -41,4 +41,4 @@ function generateScale(hexColor, numOfColors) {
   return chroma.scale(getRange(hexColor)).mode('lab').colors(numOfColors);
 }
 
-export { getPalette };
+export { generatePalette };
