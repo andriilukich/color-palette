@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PaletteList from './PaletteList';
-import MiniPalette from './MiniPalette';
+import SingleColorPalette from './SingleColorPalette';
 import Palette from './Palette';
 import paletteColors from './paletteColors';
 import { generatePalette } from './colorHelpers';
@@ -34,8 +34,8 @@ class App extends Component {
         <Route
           exact
           path='/palette/:paletteId/:colorId'
-          render={(routeProps) => (
-            <h1>hi</h1>
+          render={() => (
+            <SingleColorPalette />
           )}
         />
       </Switch>
