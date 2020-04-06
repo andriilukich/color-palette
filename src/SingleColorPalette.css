@@ -1,0 +1,16 @@
+.SingleColorPalette {
+  height: 100vh;
+}
+
+.SingleColorPalette__colors {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
+.SingleColorPalette__btns{
+  position: relative;
+  height: 50%;
+  width: 20%;
+  background-color: rgba(31, 31, 31, 0.76);
+}

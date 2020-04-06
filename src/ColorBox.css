@@ -6,45 +6,15 @@
   height: 25%;
 }
 
+.SingleColorPalette .ColorBox {
+  height: 50%;
+}
+
 .ColorBox__btn {
-  color: #fff;
-
-  cursor: pointer;
-  outline: none;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: opacity 0.5s ease, background-color 0.3s ease;
-}
-
-.ColorBox__btn:focus {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.ColorBox__btn:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.ColorBox__btn:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.ColorBox__btn--copy {
-  position: absolute;
-
-  z-index: 1;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  
-  width: 100px;
-  padding: 0.4rem 1em;
-
-  font-size: 1rem;
- 
   opacity: 0;
 }
 
-.ColorBox:hover .ColorBox__btn--copy {
+.ColorBox:hover .btn--centered {
   opacity: 1;
 }
 
@@ -61,12 +31,6 @@
   font-size: 0.7rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.ColorBox__btn--see-more {
-  align-self: flex-end;
-  padding: 0.3rem 0.3em;
-  font-weight: bold;
 }
 
 .ColorBox__overlay {
