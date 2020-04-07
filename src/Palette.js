@@ -30,7 +30,7 @@ class Palette extends Component {
         name={color.name}
         key={color.hex} 
         moreUrl={`/palette/${id}/${color.id}`}
-        isShowing={true}
+        isShowingFullPalette
       />
     ));
 

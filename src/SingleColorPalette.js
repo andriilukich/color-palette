@@ -39,7 +39,7 @@ class SingleColorPalette extends Component {
         key={color.hex}
         name={color.name}
         background={color[format]}
-        isShowing={false}
+        isShowingFullPalette={false}
       />
     ));
 
